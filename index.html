@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+
+    <link type="text/css" rel="stylesheet" href="./src/style.css">
+    <script type="text/javascript" src="./src/game.js"></script>
+    <script type="text/javascript" src="./dist/index.bundle.js"></script>
+
+</head>
+<body>
+<div id="main">
+    <div id="text">
+        <h1>Tic Tac Toe</h1>
+
+        <!-- Game Instructions -->
+        <p id="instruction">It's your turn Player X</p>
+    </div>
+    <div id="board">
+        <!-- 3*3 grid of Boxes -->
+        <input type="text" id="b1" onclick="place(this.id)" readonly>
+        <input type="text" id="b2" onclick="place(this.id)" readonly>
+        <input type="text" id="b3" onclick="place(this.id)" readonly>
+        <br><br>
+        <input type="text" id="b4" onclick="place(this.id)" readonly>
+        <input type="text" id="b5" onclick="place(this.id)" readonly>
+        <input type="text" id="b6" onclick="place(this.id)" readonly>
+        <br><br>
+        <input type="text" id="b7" onclick="place(this.id)" readonly>
+        <input type="text" id="b8" onclick="place(this.id)" readonly>
+        <input type="text" id="b9" onclick="place(this.id)" readonly>
+        <!-- Grid end here  -->
+
+        <br><br><br>
+
+        <button id="save">Save Game</button>
+        <button id="reset" onclick="reset_Board()">RESET</button>
+    </div>
+</div>
+</body>
+</html>
